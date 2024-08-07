@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --encode-sans: "Encode Sans Expanded", sans-serif;
+    --source-code: "Source Code Pro", monospace;
+}
+
+/* body{
+    font-family: var(--source-code);
+} */
+
+p{
+    font-family: var(--encode-sans);
+}
+
