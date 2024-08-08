@@ -5,15 +5,130 @@
 }
 
 :root {
-    --encode-sans: "Encode Sans Expanded", sans-serif;
-    --source-code: "Source Code Pro", monospace;
+    --ubuntu: "Ubuntu", sans-serif;;
+    --poppins: "Poppins", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --bg-color: #0A0A0A;
+    --description-color: #828282;
+    --span-color: rgb(130, 130, 130, .5);
+    --font-xs: 1rem;
+    --font-s: 1.6rem;
+    --font-md: 1.8rem;
+    --font-l: 2rem;
+    --font-lg: 2.4rem;
+
 }
 
-/* body{
-    font-family: var(--source-code);
-} */
+h1, h2, h3, h4, span{
+    font-family: var(--ubuntu);
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    background-color: var(--bg-color);
+}
 
 p{
-    font-family: var(--encode-sans);
+    font-family: var(--poppins);
 }
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.title {
+    margin-bottom: 2rem;
+    font-size: var(--font-lg);
+    color: white;
+}
+
+
+
+.hero{
+    /* width: 85%;
+    margin: 0 auto; */
+}
+.hero__title{
+    /* margin-bottom: 2rem;
+    font-size: var(--font-lg);
+    color: white; */
+}
+.hero__description{
+    color: var(--description-color);
+    margin-bottom: 2.4rem;
+    font-size: var(--font-s);
+    line-height: 20px;
+}
+
+.hero__details{
+
+}
+.details__services{
+    margin-bottom: 1.8rem;
+    color: white;
+    font-size: var(--font-md);
+}
+.details__items{
+    font-family: var(--poppins);
+    font-size: var(--font-s);
+    color: var(--description-color);    
+    width: fit-content;
+    margin-left: 3rem;
+    margin-bottom: 2.4rem;
+}
+
+.btn{
+    font-family: var(--poppins);
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+    border-radius: 16px;
+}
+
+/* ---------- SEPARATOR ---------- */
+.separator{
+    margin: 128px 0;
+}
+.separator__details{
+    width: fit-content;
+    color: var(--span-color);
+    border: 1px solid var(--span-color);
+    font-size: var(--font-xs);
+    border-radius: 16px;
+    padding: 6px;
+    
+}
+.separator__description{
+    margin-right: 10px;   
+}
+/* .separator__details::after{
+    content: "";
+    background: rgb(2,0,36);
+    background: linear-gradient(to rigth, rgba(2,0,36,1) 29%, rgba(4,118,193,0.006039915966386533) 91%);
+} */
+
+/* ---------- END SEPARATOR ---------- */
+
+/* ---------- PROJECTS ---------- */
+
+.projects__title{
+    /* margin-bottom: 2rem;
+    font-size: var(--font-lg);
+    color: white; */
+}
+.projects__description{
+    color: var(--description-color);
+    margin-bottom: 2.4rem;
+    font-size: var(--font-s);
+    line-height: 20px;
+}
+
+.projects__project{
+    color: white;
+}
+/* ---------- END PROJECTS ---------- */
 

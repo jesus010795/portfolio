@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/css/style.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./src/css/style.css">
 <title>Document</title>
 </head>
 <body>
@@ -18,13 +19,13 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1 class="hero__title">Hola Soy Jesus!</h1>
-            <h2>
-                Soy programador con gran pasión por el desarrollo web, entusiasmado por la programacion en Python y PHP, y construyendo un puente entre el backend y el frontend impulsado por Astro y WordPress.
-            </h2>
+        <section class="hero container">
+            <h1 class="hero__title title">Hola Soy Jesus!</h1>
+            <p class="hero__description">
+                Soy estudiante de Ingeniería en Desarrollo de Software con gran pasión por el desarrollo web.
+            </p>
             <div class="hero__details">
-                <p class="details__services">Puedo ayudarte con:</p>
+                <h2 class="details__services">Puedo ayudarte con:</h2>
                 <ul class="details__items">
                     <li class="details__service">
                         Desarrollos en Python
@@ -41,14 +42,22 @@
                 </ul>
             </div>
 
-            <button class="btn hero__btn">Contactame</button>
+            <button class="btn hero__btn">Trabajemos juntos</button>
         </section>
-        <hr>
-        <span>Mis proyectos: </span>
-        <section class="projects">
-            <h3 class="projects__title" >Proyectos</h3>
+
+        <div class="separator">
+            <div class="separator__details">
+                <span class="separator__description">
+                    EXPLORA MIS PROYECTOS:
+                </span>
+                <i class="fa-solid fa-arrow-down separator__icon" ></i>
+            </div>
+        </div>
+        
+        <section class="projects container">
+            <h3 class="projects__title title" >Mis Proyectos</h3>
             <p class="projects__description">
-                A continuación, presentare algunos de los proyectos en los que he estado trabajando recientemente. Me apasiona desarrollar nuevas iniciativas y explorar ideas innovadoras. ¡Siempre tengo algo nuevo en proceso, así que no dudes en volver para ver las novedades!
+                A continuación, presentare algunos de los proyectos en los que he estado trabajando recientemente. ¡Siempre tengo algo nuevo en proceso, así que no dudes en volver para ver las novedades!
             </p>
             <div class="projects__project">
                 <div class="project__container">
