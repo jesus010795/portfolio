@@ -129,6 +129,52 @@ p{
 
 .projects__project{
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project__card{
+    width: 100%;
+    border: 1px solid var(--span-color);
+    border-style: dashed;
+    border-radius: 1.6rem;
+    padding: 2.8rem;
+}
+
+.project__img-container{
+    width: 100%;
+}
+.project__img{
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 1.6rem;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.description__title{
+    
+    margin-bottom: 1.2rem;
+    color: white;
+    font-size: var(--font-s);
+    line-height: 20px;
+
+}
+.description__detail{
+    color: var(--span-color);
+    font-size: var(--font-s);
+    line-height: 20px;
+    margin-bottom: 1.2rem;
+}
+.description__links{
+    display: flex;
+    gap: 8px;
+    font-size: var(--font-md);
+}
+.links__anchor {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
 }
 /* ---------- END PROJECTS ---------- */
 
