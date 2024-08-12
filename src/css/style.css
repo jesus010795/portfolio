@@ -186,6 +186,43 @@ p{
 /* ---------- END PROJECTS ---------- */
 
 
+/* ---------- BLOG ---------- */
+.blog{
+    color: white;
+}
+.blog__title{
+    font-size: var(--font-lg);
+    margin-bottom: 2rem;
+}
+.blog__description{
+    margin-bottom: 2.8rem;
+    font-size: var(--font-md);
+    color: var(--description-color);
+}
+.blog__post{
+    max-width: 600px;
+    margin: 0 auto
+}
+.post__container{
+    width: 100%;
+    border: 1px solid var(--span-color);
+    border-style: dashed;
+    border-radius: 1.6rem;
+    padding: 2.8rem;
+    margin-bottom: 2rem;
+}
+.post__title{
+    margin-bottom: 1.6rem;
+    font-size: var(--font-md);
+    color: white;
+}
+.post__detail{
+    font-size: var(--font-md);
+    color: var(--description-color);
+}
+/* ---------- END BLOG ---------- */
+
+
 
 
 /* ---------- CONTACT ---------- */
@@ -242,33 +279,35 @@ p{
 
 }
 /* ---------- END CONTACT---------- */
+
 /* ---------- FOOTER---------- */
 
 .footer{
     /* height: 8rem; */
-    border-top: 1px solid var(--span-color);
-    border-style: dashed;
-
+    
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 4.8rem;
 
+
+    border-top: 1px solid var(--span-color);
+    border-style: dashed;
+
+    text-align: center;
     padding-top: 4.8rem;
 }
-.footer__title{
-    color:white;
-    font-family: var(--ubuntu);
-    /* font-weight: bold; */
-    font-size: var(--font-md);
-}
+
 
 .footer__socials{
     /* display: flex; */
 }
 .socials__container{
     display: flex;
-    gap: 1.2rem;
-    font-size: var(--font-md);
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: var(--font-l);
     list-style: none;
 }
 .socials__item{
@@ -276,6 +315,21 @@ p{
 
 }
 .socials__link{
+    color: white;
+    display: inline-block;
     text-decoration: none;
+}
+.footer__copy{
+    color: white;
+}
+
+.footer__title{
+    color:var(--description-color);
+    font-family: var(--ubuntu);
+    /* font-weight: bold; */
+    font-size: var(--font-md);
+}
+.footer__copy{
+    color: var(--description-color);
 }
 /* ---------- END FOOTER---------- */
