@@ -5,11 +5,13 @@
 }
 
 :root {
-    --ubuntu: "Ubuntu", sans-serif;;
+    --ubuntu: "Ubuntu", sans-serif;
     --poppins: "Poppins", sans-serif;
     --roboto: "Roboto", sans-serif;
+    --noto-color: "Noto Color Emoji", sans-serif;
     --bg-color: #0A0A0A;
     --description-color: #828282;
+    --footer-bg: #393948;
     --span-color: rgb(130, 130, 130, .5);
     --font-xs: 1rem;
     --font-s: 1.6rem;
@@ -47,6 +49,11 @@ p{
 }
 
 
+/* -----------------MAIN----------- */
+.main{
+    margin: 4rem 0 15rem;
+}
+/* ---------------END MAIN--------- */
 
 .hero{
     /* width: 85%;
@@ -178,3 +185,97 @@ p{
 }
 /* ---------- END PROJECTS ---------- */
 
+
+
+
+/* ---------- CONTACT ---------- */
+.contact{
+    /* padding-bottom: 3rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    color: white;
+}
+.contact__description{
+    font-size: var(--font-s);
+    color: var(--description-color);
+}
+
+.description__emoji{
+    color: white;
+}
+
+.contact__form-container{
+    padding: 2.8rem;
+    border: 1px solid var(--span-color);
+    border-style: dashed;
+    border-radius: 1.6rem;
+}
+.contact__title{
+    margin-bottom: 1.6rem;
+    font-size: var(--font-md);
+    text-align: center;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.form__label{
+    font-family: var(--poppins);
+    color: var(--description-color);
+    font-size: var(--font-s);
+}
+.form__input{
+    padding: 8px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.form__message{
+    width: 100%;
+    height: 8rem;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+
+}
+/* ---------- END CONTACT---------- */
+/* ---------- FOOTER---------- */
+
+.footer{
+    /* height: 8rem; */
+    border-top: 1px solid var(--span-color);
+    border-style: dashed;
+
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 4.8rem;
+}
+.footer__title{
+    color:white;
+    font-family: var(--ubuntu);
+    /* font-weight: bold; */
+    font-size: var(--font-md);
+}
+
+.footer__socials{
+    /* display: flex; */
+}
+.socials__container{
+    display: flex;
+    gap: 1.2rem;
+    font-size: var(--font-md);
+    list-style: none;
+}
+.socials__item{
+    color: white;
+
+}
+.socials__link{
+    text-decoration: none;
+}
+/* ---------- END FOOTER---------- */
