@@ -7,13 +7,13 @@
 :root {
     --ubuntu: "Ubuntu", sans-serif;
     --poppins: "Poppins", sans-serif;
-    --roboto: "Roboto", sans-serif;
+    --roboto-mono:  "Roboto Mono", monospace;;
     --noto-color: "Noto Color Emoji", sans-serif;
     --bg-color: #0A0A0A;
     --description-color: #828282;
     --footer-bg: #393948;
     --span-color: rgb(130, 130, 130, .5);
-    --font-xs: 1rem;
+    --font-xs: 1.2rem;
     --font-s: 1.6rem;
     --font-md: 1.8rem;
     --font-l: 2rem;
@@ -22,7 +22,8 @@
 }
 
 h1, h2, h3, h4, span{
-    font-family: var(--ubuntu);
+    /* font-family: var(--ubuntu); */
+    font-family: var(--roboto-mono);
 }
 
 html{
@@ -143,7 +144,7 @@ p{
 
 .project__card{
     width: 100%;
-    border: 1px solid var(--span-color);
+    border: 1px solid var(--description-color);
     border-style: dashed;
     border-radius: 1.6rem;
     padding: 2.8rem;
@@ -168,7 +169,7 @@ p{
 
 }
 .description__detail{
-    color: var(--span-color);
+    color: var(--description-color);
     font-size: var(--font-s);
     line-height: 20px;
     margin-bottom: 1.2rem;
@@ -196,8 +197,10 @@ p{
 }
 .blog__description{
     margin-bottom: 2.8rem;
-    font-size: var(--font-md);
+    font-size: var(--font-s);
     color: var(--description-color);
+    line-height: 20px;
+
 }
 .blog__post{
     max-width: 600px;
@@ -205,7 +208,7 @@ p{
 }
 .post__container{
     width: 100%;
-    border: 1px solid var(--span-color);
+    border: 1px solid var(--description-color);
     border-style: dashed;
     border-radius: 1.6rem;
     padding: 2.8rem;
@@ -213,12 +216,19 @@ p{
 }
 .post__title{
     margin-bottom: 1.6rem;
-    font-size: var(--font-md);
+    font-size: var(--font-l);
     color: white;
+    line-height: 22px;
 }
 .post__detail{
-    font-size: var(--font-md);
+    margin-bottom: 2rem;
+    font-size: var(--font-s);
     color: var(--description-color);
+    line-height: 20px;
+
+}
+.post__date{
+    font-size: var(--font-xs);
 }
 /* ---------- END BLOG ---------- */
 
@@ -244,7 +254,7 @@ p{
 
 .contact__form-container{
     padding: 2.8rem;
-    border: 1px solid var(--span-color);
+    border: 1px solid var(--description-color);
     border-style: dashed;
     border-radius: 1.6rem;
 }
@@ -327,7 +337,7 @@ p{
     color:var(--description-color);
     font-family: var(--ubuntu);
     /* font-weight: bold; */
-    font-size: var(--font-md);
+    font-size: var(--font-xs);
 }
 .footer__copy{
     color: var(--description-color);
