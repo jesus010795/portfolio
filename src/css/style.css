@@ -123,6 +123,11 @@ p{
 
 /* ---------- PROJECTS ---------- */
 
+
+.projects__details{
+    margin: 0 auto;
+    max-width: 800px;
+}
 .projects__title{
     /* margin-bottom: 2rem;
     font-size: var(--font-lg);
@@ -136,9 +141,13 @@ p{
 }
 
 .projects__project{
+    /* max-width: 1500px; */
+    margin: 0 auto;
     color: white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* grid-auto-columns: minmax(220px, 350px); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+    justify-content: center;
     gap: 3rem;
 }
 
@@ -191,12 +200,18 @@ p{
 .blog{
     color: white;
 }
+.blog__details{
+    max-width: 800px;
+    margin: 0 auto 3.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
 .blog__title{
     font-size: var(--font-lg);
-    margin-bottom: 2rem;
 }
 .blog__description{
-    margin-bottom: 2.8rem;
+    /* margin-bottom: 2.8rem; */
     font-size: var(--font-s);
     color: var(--description-color);
     line-height: 20px;
@@ -238,6 +253,7 @@ p{
 /* ---------- CONTACT ---------- */
 .contact{
     /* padding-bottom: 3rem; */
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     gap: 2.8rem;
